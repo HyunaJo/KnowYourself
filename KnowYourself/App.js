@@ -6,13 +6,15 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import * as SplashScreen from 'expo-splash-screen';
 import Login from './pages/Login';
 import FirstQ from './pages/FirstQ';
+import Home from './pages/Home';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   const [fontsLoaded] = useFonts({
     'HappyGoheungB': require('./assets/fonts/HappyGoheungB.ttf'),
-    'HappyGoheungL': require('./assets/fonts/HappyGoheungL.ttf')
+    'HappyGoheungL': require('./assets/fonts/HappyGoheungL.ttf'),
+    'HappyGoheungM': require('./assets/fonts/HappyGoheungM.ttf')
   })
 
   const onLayoutRootView = useCallback(async () => {
@@ -28,6 +30,10 @@ export default function App() {
   return (
     <NavigationContainer>
     <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Screen
+        name="Home"
+        component={Home}
+      />
       <Stack.Screen
         name="Login"
         component={Login}
