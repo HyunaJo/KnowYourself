@@ -1,12 +1,18 @@
 import { useCallback } from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
+import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import * as SplashScreen from 'expo-splash-screen';
+import Login from './pages/Login';
+import FirstQ from './pages/FirstQ';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    'HappyGoheungB': require('./assets/fonts/HappyGoheungB.ttf')
+    'HappyGoheungB': require('./assets/fonts/HappyGoheungB.ttf'),
+    'HappyGoheungL': require('./assets/fonts/HappyGoheungL.ttf')
   })
 
   const onLayoutRootView = useCallback(async () => {
@@ -20,24 +26,17 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-        <Text style = {styles.title}>KNOW Yourself</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen
+        name="Login"
+        component={Login}
+      />
+      <Stack.Screen
+        name="FirstQ"
+        component={FirstQ}
+      />
+    </Stack.Navigator>
+  </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#000',
-    alignItems: 'center',
-    // justifyContent: 'center',
-  },
-  title: {
-    fontFamily:"HappyGoheungB",
-    fontSize:70,
-    color:"red",
-    marginTop:138
-  }
-});
