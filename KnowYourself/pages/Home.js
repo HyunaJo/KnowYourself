@@ -13,7 +13,7 @@ const Home = ({navigation}) => {
       var temp = []
       let cnt = width / ITEM_WIDTH
       let itemSpacing =  (width - cnt * ITEM_WIDTH)/cnt
-      let itemStyle = Object.assign(styles.border.top,{marginLeft:itemSpacing})
+      let itemStyle = Object.assign({},{...styles.border.top,marginLeft:itemSpacing})
       for (let i=0; i<cnt; i++){
         temp.push(<Text style={itemStyle}>너 자신을 알라</Text>)
       }
@@ -25,7 +25,7 @@ const Home = ({navigation}) => {
     let cnt = height / ITEM_WIDTH
     console.log(cnt)
     let itemSpacing =  (height - cnt * ITEM_WIDTH)/cnt + ITEM_WIDTH
-    let itemStyle = Object.assign(styles.border.left,{marginLeft:-ITEM_HEIGHT, marginBottom:itemSpacing})
+    let itemStyle = Object.assign({},{...styles.border.left,marginLeft:-ITEM_HEIGHT, marginBottom:itemSpacing})
     for (let i=0; i<cnt; i++){
       temp.push(<Text style={itemStyle}>너 자신을 알라</Text>)
     }
@@ -37,7 +37,7 @@ const Home = ({navigation}) => {
     let cnt = height / ITEM_WIDTH
     console.log(cnt)
     let itemSpacing =  (height - cnt * ITEM_WIDTH)/cnt + ITEM_WIDTH - 15
-    let itemStyle = Object.assign(styles.border.right,{marginLeft:-ITEM_HEIGHT-0, marginBottom:itemSpacing})
+    let itemStyle = Object.assign({},{...styles.border.right,marginLeft:-ITEM_HEIGHT, marginBottom:itemSpacing})
     for (let i=0; i<cnt; i++){
       temp.push(<Text style={itemStyle}>너 자신을 알라</Text>)
     }
@@ -67,7 +67,7 @@ const Home = ({navigation}) => {
               <Text style={styles.button} onPress={onPress} >Yes, I Am</Text>
             </TouchableOpacity>
           </View>
-          <StatusBar style="none"/>
+          <StatusBar style="light"/>
           <View style = {styles.section}>
             <Image style={styles.socratesImage} source={require('../assets/images/socrates.png')}/>
           </View>
@@ -92,8 +92,7 @@ const styles = StyleSheet.create({
     flex:1,
     flexDirection: 'row',
     backgroundColor:"#000",
-    zIndex: 3, // works on ios
-    elevation: 3 // works on android
+  
   },
   section: {
     flex:1,
