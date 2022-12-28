@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
-const FirstQ = () => {
+const SecondQ = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>당신은 현재 솔로입니까?</Text>
+            <Text style={styles.title}>당신의 드립력은 괜찮습니까?</Text>
             <TouchableOpacity>
                 {/* <Text style={styles.button} onPress={onPress} >Yes, I Am</Text> */}
-                <Text style={styles.button} >네</Text>
+                <Text style={styles.button} >네</Text> 
                 <Text style={styles.button} >아니요</Text>
             </TouchableOpacity>
         </View>
@@ -47,4 +47,4 @@ const styles = StyleSheet.create({
     }
   });
 
-export default FirstQ;
+export default SecondQ;

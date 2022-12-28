@@ -76,6 +76,7 @@ const Home = ({navigation}) => {
           {printRightBorder()}
         </View>
       </View>
+      <StatusBar style="light"/>
     </View>
   );
 }

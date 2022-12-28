@@ -7,6 +7,8 @@ import * as SplashScreen from 'expo-splash-screen';
 import Login from './pages/Login';
 import FirstQ from './pages/FirstQ';
 import Home from './pages/Home';
+import SecondQ from './pages/SecondQ';
+import ThirdQ from './pages/ThirdQ';
 
 const Stack = createNativeStackNavigator();
 
@@ -41,6 +43,14 @@ export default function App() {
       <Stack.Screen
         name="FirstQ"
         component={FirstQ}
+      />
+      <Stack.Screen
+        name="SecondQ"
+        component={SecondQ}
+      />
+      <Stack.Screen
+        name="ThirdQ"
+        component={ThirdQ}
       />
     </Stack.Navigator>
   </NavigationContainer>
