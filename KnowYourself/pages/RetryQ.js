@@ -38,8 +38,7 @@ const styles = StyleSheet.create({
     title: {
         fontFamily:"HappyGoheungB",
         fontSize:50,
-        color:"#fff",
-        marginTop:-20
+        color:"#fff"
     },
     button: {
         fontFamily:"HappyGoheungL",
