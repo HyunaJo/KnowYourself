@@ -36,7 +36,7 @@ const ThirdQ = ({route, navigation}) => {
         }
         else { // 본 페이지로 넘어가기
             console.log("다 굴렀다..")
-            // navigation.navigate("",{name:name})
+            navigation.navigate("Intro",{name:name})
         }
       });
      
