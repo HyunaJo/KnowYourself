@@ -3,43 +3,26 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 const FirstQ = ({route, navigation}) => {
     const name = route.params.name;
+    const questionNum = route.params.questionNum;
 
-    const onPressYes = useCallback(()=>{
-        switch(name){
-            case "김은서":
-            case "김유진":
-            case "김경미":
-            case "조현아":
-                navigation.navigate("RetryQ",{name:name, questionNum:1});
+    const onPress = useCallback(()=>{
+        switch(questionNum){
+            case 1:
+                navigation.navigate("FirstQ",{name:name});
                 break;
-            default:
+            case 2:
                 navigation.navigate("SecondQ",{name:name});
-                break;
-        }
-    });
-
-    const onPressNo = useCallback(()=>{
-        switch(name){
-            case "김은서":
-            case "김유진":
-            case "김경미":
-            case "조현아":
-                navigation.navigate("SecondQ",{name:name});
-                break;
-            default:
-                navigation.navigate("RetryQ",{name:name, questionNum:1});
                 break;
         }
     });
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>당신은 현재 솔로입니까?</Text>
+            <Text style={styles.title}>...</Text>
+            <Text style={styles.title}>관리자는</Text>
+            <Text style={styles.title}>그렇게 생각하지 않습니다?</Text>
             <TouchableOpacity>
-                <Text style={styles.button} onPress={onPressYes}>네</Text>
-            </TouchableOpacity>
-            <TouchableOpacity>
-                <Text style={styles.button} onPress={onPressNo}>아니요</Text>
+                <Text style={styles.button} onPress={onPress}>재시도</Text>
             </TouchableOpacity>
         </View>
     );
@@ -56,13 +39,14 @@ const styles = StyleSheet.create({
         fontFamily:"HappyGoheungB",
         fontSize:50,
         color:"#fff",
+        marginTop:-20
     },
     button: {
       fontFamily:"HappyGoheungL",
       margin:10,
       fontSize:45,
       height: 40,
-      width: 330,
+      width: 180,
       borderWidth: 0.7,
       borderRadius:10,
       textAlign:'center',

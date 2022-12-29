@@ -9,6 +9,7 @@ import FirstQ from './pages/FirstQ';
 import Home from './pages/Home';
 import SecondQ from './pages/SecondQ';
 import ThirdQ from './pages/ThirdQ';
+import RetryQ from './pages/RetryQ';
 
 const Stack = createNativeStackNavigator();
 
@@ -51,6 +52,10 @@ export default function App() {
       <Stack.Screen
         name="ThirdQ"
         component={ThirdQ}
+      />
+      <Stack.Screen
+        name="RetryQ"
+        component={RetryQ}
       />
     </Stack.Navigator>
   </NavigationContainer>

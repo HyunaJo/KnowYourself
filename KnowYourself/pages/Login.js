@@ -11,13 +11,12 @@ const Login = ({navigation}) => {
 
     const onPress = useCallback(()=>{
         Keyboard.dismiss();
-        console.log("click");
         firestore.collection("user").get().then((users)=>{
             users.forEach((user)=>{
                 if(user.id==name){
                     if(user.data().password==password){
-                        console.log("valid user");
-                        navigation.navigate("FirstQ")
+                        // console.log("valid user");
+                        navigation.navigate("FirstQ",{name:name})
                     }
                     else{
                         toastRef.current.show("당신은 당신의 이름과 생일도 잘 모르시나요?");

@@ -1,14 +1,43 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
-const SecondQ = () => {
+const SecondQ = ({route, navigation}) => {
+    const name = route.params.name;
+
+    const onPressYes = useCallback(()=>{
+        switch(name){
+            case "서지완":
+            case "박채원":
+            case "김수연":
+                navigation.navigate("ThirdQ",{name:name});
+                break;
+            default:
+                navigation.navigate("RetryQ",{name:name, questionNum:2});
+                break;
+        }
+    });
+
+    const onPressNo = useCallback(()=>{
+        switch(name){
+            case "서지완":
+            case "박채원":
+            case "김수연":
+                navigation.navigate("RetryQ",{name:name, questionNum:2});
+                break;
+            default:
+                navigation.navigate("ThirdQ",{name:name});
+                break;
+        }
+    });
+    
     return (
         <View style={styles.container}>
             <Text style={styles.title}>당신의 드립력은 괜찮습니까?</Text>
             <TouchableOpacity>
-                {/* <Text style={styles.button} onPress={onPress} >Yes, I Am</Text> */}
-                <Text style={styles.button} >네</Text> 
-                <Text style={styles.button} >아니요</Text>
+                <Text style={styles.button} onPress={onPressYes}>네</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Text style={styles.button} onPress={onPressNo}>아니요</Text>
             </TouchableOpacity>
         </View>
     );
