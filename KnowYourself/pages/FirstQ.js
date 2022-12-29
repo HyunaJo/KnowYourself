@@ -58,16 +58,16 @@ const styles = StyleSheet.create({
         color:"#fff",
     },
     button: {
-      fontFamily:"HappyGoheungL",
-      margin:10,
-      fontSize:45,
-      height: 40,
-      width: 330,
-      borderWidth: 0.7,
-      borderRadius:10,
-      textAlign:'center',
-      borderColor:"#fff",
-      color:"#fff"
+        fontFamily:"HappyGoheungL",
+        margin:10,
+        fontSize:45,
+        height: 40,
+        width: 160,
+        borderWidth: 0.7,
+        borderRadius:10,
+        textAlign:'center',
+        borderColor:"#fff",
+        color:"#fff"
     },
     text:{
         fontFamily:"HappyGoheungL",

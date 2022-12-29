@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
-const FirstQ = ({route, navigation}) => {
+const RetryQ = ({route, navigation}) => {
     const name = route.params.name;
     const questionNum = route.params.questionNum;
 
@@ -42,16 +42,16 @@ const styles = StyleSheet.create({
         marginTop:-20
     },
     button: {
-      fontFamily:"HappyGoheungL",
-      margin:10,
-      fontSize:45,
-      height: 40,
-      width: 180,
-      borderWidth: 0.7,
-      borderRadius:10,
-      textAlign:'center',
-      borderColor:"#fff",
-      color:"#fff"
+        fontFamily:"HappyGoheungL",
+        margin:10,
+        fontSize:45,
+        height: 40,
+        width: 160,
+        borderWidth: 0.7,
+        borderRadius:10,
+        textAlign:'center',
+        borderColor:"#fff",
+        color:"#fff"
     },
     text:{
         fontFamily:"HappyGoheungL",
@@ -62,4 +62,4 @@ const styles = StyleSheet.create({
     }
   });
 
-export default FirstQ;
+export default RetryQ;
