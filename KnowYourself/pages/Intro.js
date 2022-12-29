@@ -14,7 +14,7 @@ const Intro = ({route, navigation}) => {
             <Text style={styles.preface}>사실...</Text>
             <Text style={styles.preface}>관리자는 이번 학기 망하지 않았습니다.</Text>
             <Text style={styles.preface}>따라서 당신의 위로가 필요없습니다.</Text>
-            <Text style={styles.preface}>5번 동안 수고많으셨습니다.</Text>
+            <Text style={styles.preface}>4번 동안 수고많으셨습니다.</Text>
             <Text style={styles.title}>이제 본격적으로 자신을 알아볼까요?</Text>
             <TouchableOpacity>
                 <Text style={styles.button} onPress={onPress}>네</Text>

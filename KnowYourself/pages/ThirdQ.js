@@ -9,7 +9,7 @@ const ThirdQ = ({route, navigation}) => {
     
     const onPress = useCallback((idx)=>{
         console.log("click : "+idx);
-        if(retryCnt != 5){ // 아직 더 굴러야함.
+        if(retryCnt != 4){ // 아직 더 굴러야함.
             let retryString=""
             switch(idx) {
                 case 1:
