@@ -8,14 +8,7 @@ const RetryQ2 = ({route, navigation}) => {
     let retryCnt = route.params.cnt;
 
     const onPress = useCallback(()=>{
-        // switch(questionNum){
-        //     case 1:
-        //         navigation.navigate("FirstQ",{name:name});
-        //         break;
-        //     case 2:
-        //         navigation.navigate("SecondQ",{name:name});
-        //         break;
-        // }
+        navigation.navigate("ThirdQ",{name:name,cnt:retryCnt+1});
     });
 
     return (
