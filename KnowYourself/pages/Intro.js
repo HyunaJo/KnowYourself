@@ -6,7 +6,7 @@ const Intro = ({route, navigation}) => {
     const name = route.params.name;
 
     const onPress = useCallback(()=>{
-        //메인 페이지로 넘어가기 - name 넘기기
+        navigation.navigate("Main",{name:name})
     });
 
     return (
@@ -32,14 +32,14 @@ const styles = StyleSheet.create({
     },
     preface: {
         fontFamily:"HappyGoheungL",
-        fontSize:45,
+        fontSize:40,
         color:"#fff",
         marginTop:-15,
         textAlign:"center"
     },
     title: {
         fontFamily:"HappyGoheungB",
-        fontSize:45,
+        fontSize:40,
         color:"#fff",
         marginTop:80,
         textAlign:"center"

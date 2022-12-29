@@ -12,6 +12,7 @@ import ThirdQ from './pages/ThirdQ';
 import RetryQ from './pages/RetryQ';
 import RetryQ2 from './pages/RetryQ2';
 import Intro from './pages/Intro';
+import Main from './pages/Main'
 
 const Stack = createNativeStackNavigator();
 
@@ -61,7 +62,6 @@ export default function App() {
         name="RetryQ"
         component={RetryQ}
       />
-
       <Stack.Screen
         name="RetryQ2"
         component={RetryQ2}
@@ -72,6 +72,10 @@ export default function App() {
         component={Intro}
       />
 
+      <Stack.Screen
+        name="Main"
+        component={Main}
+      />
     </Stack.Navigator>
   </NavigationContainer>
   );
