@@ -9,7 +9,7 @@ const SecondQ = ({route, navigation}) => {
             case "서지완":
             case "박채원":
             case "김수연":
-                navigation.navigate("ThirdQ",{name:name});
+                navigation.navigate("ThirdQ",{name:name, cnt:0});
                 break;
             default:
                 navigation.navigate("RetryQ",{name:name, questionNum:2});
@@ -25,7 +25,7 @@ const SecondQ = ({route, navigation}) => {
                 navigation.navigate("RetryQ",{name:name, questionNum:2});
                 break;
             default:
-                navigation.navigate("ThirdQ",{name:name});
+                navigation.navigate("ThirdQ",{name:name, cnt:0});
                 break;
         }
     });

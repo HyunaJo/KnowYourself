@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import SecondQ from './pages/SecondQ';
 import ThirdQ from './pages/ThirdQ';
 import RetryQ from './pages/RetryQ';
+import RetryQ2 from './pages/RetryQ2';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +34,7 @@ export default function App() {
   return (
     <NavigationContainer>
     <Stack.Navigator screenOptions={{ headerShown: false }}>
+      
     <Stack.Screen
         name="Home"
         component={Home}
@@ -49,7 +51,8 @@ export default function App() {
         name="SecondQ"
         component={SecondQ}
       />
-      <Stack.Screen
+
+       <Stack.Screen
         name="ThirdQ"
         component={ThirdQ}
       />
@@ -57,6 +60,12 @@ export default function App() {
         name="RetryQ"
         component={RetryQ}
       />
+
+      <Stack.Screen
+        name="RetryQ2"
+        component={RetryQ2}
+      />
+
     </Stack.Navigator>
   </NavigationContainer>
   );
