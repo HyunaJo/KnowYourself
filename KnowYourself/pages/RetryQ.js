@@ -8,10 +8,10 @@ const RetryQ = ({route, navigation}) => {
     const onPress = useCallback(()=>{
         switch(questionNum){
             case 1:
-                navigation.navigate("FirstQ",{name:name});
+                navigation.reset({routes: [{name: "FirstQ", params:{name:name}}]})
                 break;
             case 2:
-                navigation.navigate("SecondQ",{name:name});
+                navigation.reset({routes: [{name: "SecondQ", params:{name:name}}]})
                 break;
         }
     });

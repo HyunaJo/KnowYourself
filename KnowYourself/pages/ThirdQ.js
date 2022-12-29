@@ -30,11 +30,11 @@ const ThirdQ = ({route, navigation}) => {
                 default:
                     retryString = "Error: idx error"
             }
-            navigation.navigate("RetryQ2",{name:name,text:retryString,cnt:retryCnt})
+            navigation.reset({routes: [{name: "RetryQ2", params:{name:name,text:retryString,cnt:retryCnt}}]})
         }
         else { // 본 페이지로 넘어가기
             console.log("다 굴렀다..")
-            navigation.navigate("Intro",{name:name})
+            navigation.reset({routes: [{name: "Intro", params:{name:name}}]})
         }
       });
      

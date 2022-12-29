@@ -6,7 +6,7 @@ const Intro = ({route, navigation}) => {
     const name = route.params.name;
 
     const onPress = useCallback(()=>{
-        navigation.navigate("Main",{name:name})
+        navigation.reset({routes: [{name: "Main", params:{name:name}}]})
     });
 
     return (

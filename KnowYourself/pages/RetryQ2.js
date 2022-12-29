@@ -8,7 +8,7 @@ const RetryQ2 = ({route, navigation}) => {
     let retryCnt = route.params.cnt;
 
     const onPress = useCallback(()=>{
-        navigation.navigate("ThirdQ",{name:name,cnt:retryCnt+1});
+        navigation.reset({routes: [{name: "ThirdQ", params:{name:name,cnt:retryCnt+1}}]})
     });
 
     return (
