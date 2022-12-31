@@ -119,7 +119,9 @@ const Send = ({route, navigation}) => {
                   <Text style={styles.button} onPress = {onPressCancle}>취소</Text>
             </TouchableOpacity>
         </View>
+        <View style={{ flex:1,alignItems: 'center'}}>
           <Toast ref={toastRef}/>
+        </View>
         </View>
       </View>
     </SafeAreaView>
