@@ -13,6 +13,7 @@ import RetryQ from './pages/RetryQ';
 import RetryQ2 from './pages/RetryQ2';
 import Intro from './pages/Intro';
 import Main from './pages/Main'
+import Send from './pages/Send'
 
 const Stack = createNativeStackNavigator();
 
@@ -36,7 +37,7 @@ export default function App() {
   return (
     <NavigationContainer>
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      
+ 
     <Stack.Screen
         name="Home"
         component={Home}
@@ -75,6 +76,11 @@ export default function App() {
       <Stack.Screen
         name="Main"
         component={Main}
+      />
+
+      <Stack.Screen
+        name="Send"
+        component={Send}
       />
     </Stack.Navigator>
   </NavigationContainer>
