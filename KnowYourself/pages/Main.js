@@ -31,6 +31,10 @@ const Main = ({route, navigation}) => {
         setMessageList([...messageList]);
     });
     
+    const onPressSend = useCallback(()=>{
+        navigation.navigate("Send",{name:name});
+    });
+    
     return (
         <View style={styles.container}>
             <View style={{flex:1, borderBottomColor:"#fff", borderBottomWidth:1, flexDirection:"row", alignItems: 'center', paddingLeft:20, marginTop:30}}>
@@ -46,7 +50,7 @@ const Main = ({route, navigation}) => {
                 {messageList}
             </ScrollView>
             <TouchableOpacity style={styles.floatingButton}>
-                    <FontAwesome name="send" size={32} color="white"/>
+                    <FontAwesome name="send" size={32} color="white" onPress={onPressSend}/>
                 </TouchableOpacity>
             </View>
             <StatusBar style="light"/>
