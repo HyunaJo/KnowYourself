@@ -56,8 +56,7 @@ const Send = ({route, navigation}) => {
   });
 
   return (
-    <SafeAreaView style={styles.saveAreaViewContainer}>
-      <StatusBar backgroundColor="#FFF" barStyle="dark-content" />
+    <View style={styles.saveAreaViewContainer}>
       <View style={styles.viewContainer}>
         <ScrollView
           showsVerticalScrollIndicator={false}
@@ -124,7 +123,7 @@ const Send = ({route, navigation}) => {
         </View>
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 
@@ -176,7 +175,7 @@ input: {
     shadowRadius: 10,
     elevation: 10,
   },
-  saveAreaViewContainer: {flex: 1, backgroundColor: '#000'},
+  saveAreaViewContainer: {paddingTop:40,flex: 1, backgroundColor: '#000'},
   viewContainer: {flex: 1, width, backgroundColor: '#000'},
   scrollViewContainer: {
     flexGrow: 1,
