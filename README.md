@@ -24,4 +24,5 @@
    <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/e4ab6973-f96e-429b-9fef-cf741ce8c4b8.png" width="200" height="400"/>
   <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/c6f21b45-ef34-4b30-a708-46a91bb8b63f.png" width="200" height="400"/>
 </p>
+
 * 틀린 답변 선택 시 첫 질문 화면으로 이동
