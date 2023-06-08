@@ -52,6 +52,7 @@
 
 
 ### - 개발 도구
-<img src="https://img.shields.io/badge/react native-7EE5FC?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/visual studio code-blue?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+<img src="https://img.shields.io/badge/react native-7EE5FC?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/visual studio code-blue?style=for-the-badge&logo=visualstudiocode&logoColor=white"> <img src="https://img.shields.io/badge/Expo-black?style=for-the-badge&logo=expo&logoColor=white">
+
 
 
