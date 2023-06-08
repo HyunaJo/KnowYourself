@@ -28,5 +28,18 @@
   <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/c6f21b45-ef34-4b30-a708-46a91bb8b63f.png" width="200" height="400"/>
   <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/24dba666-193a-4866-872f-b245d6a656e6.png" width="200" height="400"/>
 </p>
+<br>
+
+> 사용자별 메인화면
+<p>
+  <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/a19108dc-466c-40ee-8c56-61faa55d8fbc.png" width="200" height="400"/>
+  <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/0becfb90-24ca-468f-be51-1459d023e488.png" width="200" height="400"/>
+</p>
+<br>
+
+> 속마음 전송 화면
+
+
+
 
 
