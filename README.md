@@ -17,9 +17,11 @@
 <br>
 
 > 사용자 식별 질문 화면
+* 사용자별 정해진 답변 선택 시 다음 질문으로 이동
 <p>
   <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/bf106a90-f7c9-4bb0-89e3-dff4c96169f8.png" width="200" height="400"/>
   <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/91a6a6fc-14a4-4ee6-bd1e-0f604293fab2.png" width="200" height="400"/>
    <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/e4ab6973-f96e-429b-9fef-cf741ce8c4b8.png" width="200" height="400"/>
   <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/c6f21b45-ef34-4b30-a708-46a91bb8b63f.png" width="200" height="400"/>
 </p>
+* 틀린 답변 선택 시 첫 질문 화면으로 이동
