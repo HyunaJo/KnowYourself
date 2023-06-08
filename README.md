@@ -38,6 +38,10 @@
 <br>
 
 > 속마음 전송 화면
+<p>
+  <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/e30b596e-42d7-4798-b494-e5b7c13b4dae.png" width="200" height="400"/>
+  <img src="https://github.com/HyunaJo/KnowYourself/assets/86238720/5819d6ab-4e7c-447e-ae88-e05cb8e10785.png" width="200" height="400"/>
+</p>
 
 
 
